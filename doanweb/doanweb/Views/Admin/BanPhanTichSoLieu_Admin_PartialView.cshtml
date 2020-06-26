@@ -1,0 +1,31 @@
+﻿
+<div class="card-body">
+    @if (ViewBag.BangSoLieu_Admin_giohang!=0)
+    {
+        <h4 class="small font-weight-bold">Số Đơn Hàng Đang Nằm Trong Giỏ Hàng<span class="float-right">@ViewBag.BangSoLieu_Admin_giohang<i class="fas fa-percent"></i></span></h4>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: @ViewBag.BangSoLieu_Admin_giohang%" aria-valuenow="@ViewBag.BangSoLieu_Admin_giohang" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    }
+    @if (ViewBag.BangSoLieu_Admin_donhang!=0)
+    {
+        <h4 class="small font-weight-bold">Số Đơn Hàng Đang Chờ Thanh Toán<span class="float-right">@ViewBag.BangSoLieu_Admin_donhang<i class="fas fa-percent"></i></span></h4>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: @ViewBag.BangSoLieu_Admin_donhang%" aria-valuenow="@ViewBag.BangSoLieu_Admin_donhang" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    }
+    @if (ViewBag.BangSoLieu_Admin_donhangthanhcong!=0)
+    {
+        <h4 class="small font-weight-bold">Số Đơn Hàng Thanh Toán Thành Công<span class="float-right">@ViewBag.BangSoLieu_Admin_donhangthanhcong<i class="fas fa-percent"></i></span></h4>
+        <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: @ViewBag.BangSoLieu_Admin_donhangthanhcong%" aria-valuenow="@ViewBag.BangSoLieu_Admin_donhangthanhcong" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    }
+    @if (ViewBag.BangSoLieu_Admin_donhangthatbai!=0)
+    {
+        <h4 class="small font-weight-bold">Số Đơn Hàng Thanh Toán Thất Bại<span class="float-right">@ViewBag.BangSoLieu_Admin_donhangthatbai<i class="fas fa-percent"></i></span></h4>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-info" role="progressbar" style="width: @ViewBag.BangSoLieu_Admin_donhangthatbai%" aria-valuenow="@ViewBag.BangSoLieu_Admin_donhangthatbai" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    }
+</div>
